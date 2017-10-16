@@ -1,0 +1,92 @@
+#include "Revolver.hpp"
+
+#include "PlayContext.hpp"
+#include "GameContext.hpp"
+#include "ResourceManager.hpp"
+#include "Animation.hpp"
+
+Revolver::Revolver() {
+	mAnimation = NULL;
+}
+
+Revolver::~Revolver() {
+}
+
+void Revolver::setup(PlayContext* playContext, int floor) {
+	BulletGun::setup(playContext, floor);
+
+	ResourceManager* resourceManager = mPlayContext->getGameContext()->getResourceManager();
+	mAnimation = new Animation(false, 0, resourceManager->getImage(ResourceManager::ImageResources::floorRevolver_png));
+}
+
+void Revolver::prepareForReuse() {
+	BulletGun::prepareForReuse();
+
+	if(mAnimation) {
+		delete mAnimation;
+		mAnimation = NULL;
+	}
+}
+
+// Weapon
+
+bool Revolver::strikeAtEndOfUse() {
+	return true;
+}
+
+float Revolver::soundRadius() {
+<<<<<<< Updated upstream
+    return 5.0;
+=======
+    return 5.0;  // TODO: define radius
+>>>>>>> Stashed changes
+}
+
+// Gun
+
+int Revolver::maxAmmoCount() {
+	return 800;
+}
+
+float Revolver::cooldownTimeInSeconds() {
+	return 0.0f;
+}
+
+float Revolver::rangeInMeters() {
+	return 7.0f;
+}
+
+Animation* Revolver::idleAnimation() {
+	return mAnimation;
+}
+
+bool Revolver::isAutomaticWeapon() {
+	return false;
+}
+
+ResourceManager::SoundResources Revolver::actionSoundEffect() {
+	return ResourceManager::SoundResources::gunBlast_wav;
+}
+
+// BulletGun
+
+float Revolver::bulletCalibre() {
+	return 1.0f;
+}
+
+// <Inspectable>
+
+std::vector<ItemDescription> Revolver::getDebugDescription() {
+	std::vector<ItemDescription> itemDescriptionList;
+
+	std::stringstream ss;
+	ss << "unique id: " << mID << std::endl;
+	ItemDescription idDescription(ss.str(), NULL, ItemDescription::UsageType::NO_USAGE);
+	itemDescriptionList.push_back(idDescription);
+
+	return itemDescriptionList;
+}
+
+std::string Revolver::getDebugName() {
+	return "Revolver";
+}

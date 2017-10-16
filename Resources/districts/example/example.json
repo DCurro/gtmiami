@@ -1,0 +1,26 @@
+{
+	"floor_#" : {
+		"outdoorTiles" 	: [1, 1, ..., 1],
+		"interiorTiles" : [1, 1, ..., 1],
+		"walls" 		: [1, 1, ..., 1],
+
+		"pooledPlayEntityDescriptors" : [
+			{
+				"uniqueId" 	: 23782937543786178326423,
+				"type" 		: "Bunny",
+				"x" 		: 100,
+				"y" 		: 200,
+				"angle" 	: 30
+			},
+			...
+			{
+				"uniqueId" 	: 734907543895743876782872,
+				"type" 		: "Zombie",
+				"x" 		: 125,
+				"y" 		: 167,
+				"angle" 	: 90
+			}
+		]
+	},
+	...
+}

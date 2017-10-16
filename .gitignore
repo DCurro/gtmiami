@@ -1,0 +1,14 @@
+CMake*
+.idea/
+.cproject
+.project
+RemoteSystemTemoFiles
+Debug
+Release
+.settings
+.metadata
+SyncToy_754956ef-760a-4dfb-a3ce-f33e90f20dde.dat
+/Debug
+/Release
+gitinspector-0.3.2
+.bitbucketoriginal_git

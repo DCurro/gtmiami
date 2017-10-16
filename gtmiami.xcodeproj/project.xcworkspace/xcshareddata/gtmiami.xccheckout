@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DD49DC80-33A6-436F-8071-8350CDBF411F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>gtmiami</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1452785C6EF8762C6B26FE802FFB1F2897FCA6C4</key>
+		<string>https://bitbucket.org/DCurro/gtmiami.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>gtmiami.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1452785C6EF8762C6B26FE802FFB1F2897FCA6C4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/DCurro/gtmiami.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1452785C6EF8762C6B26FE802FFB1F2897FCA6C4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1452785C6EF8762C6B26FE802FFB1F2897FCA6C4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>gtmiami</string>
+		</dict>
+	</array>
+</dict>
+</plist>
