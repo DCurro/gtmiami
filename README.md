@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/DCurro/gtmiami/blob/master/github_images/gtmiami.gif" width="800">
+<img src="https://github.com/DCurro/gtmiami/blob/master/github_images/gtmiami.gif" width="600">
 </p>
 
 # gtmiami
