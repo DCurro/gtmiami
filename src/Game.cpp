@@ -40,7 +40,8 @@ Game::Game() {
 	mShouldPopGameMode = false;
 	mGameModeToReset = NULL;
 
-	this->resetGameMode(new MainMenuGameMode(mGameContext));
+//    this->resetGameMode(new MainMenuGameMode(mGameContext));
+    this->resetGameMode(new PlayGameMode(mGameContext));
 
 	//Initialize AudioManager once the build is run
 	mGameContext->getAudioManager()->playMusic(ResourceManager::MusicPathResources::hotlineTO_ogg);

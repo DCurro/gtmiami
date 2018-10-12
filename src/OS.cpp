@@ -54,6 +54,7 @@ std::string OS::getPwd() {
 //			   }
 
                 mPwd = std::string(path);
+    mPwd.append("/");
     
 			#endif
 		#endif
@@ -77,8 +78,7 @@ std::string OS::getPwd() {
 //            #endif
         // ----------------------------------------------------------------------------
 
-
-	   DIR* dirExists = opendir((mPwd + "Resources/").c_str());
+	   DIR* dirExists = opendir(( mPwd + "Resources/" ).c_str());
 		if(!dirExists){
 			mPwd = "";
 		}

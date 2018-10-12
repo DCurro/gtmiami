@@ -104,9 +104,12 @@ void PlayGameMode::initialize() {
 
 	//Play music
 	audioManager->playMusic(ResourceManager::MusicPathResources::asphaltSaint_v2_ogg);
+    
+    mPlayContext->getEntityManager()->addEntity(mPlayContext->getFactory()->createHero(mPlayContext, 0, b2Vec2(0,0), 0));
+    
 
-	window.clear();     //THESE TWO LINES NEED TO BE HERE TO MAKE RENDERTEXTURE STUFF WORK
-	window.display();   //WE DON'T KNOW WHY.  WE ARE USING AN UNSTABLE VERSION OF SFML THOUGH
+    window.clear();     //THESE TWO LINES NEED TO BE HERE TO MAKE RENDERTEXTURE STUFF WORK
+    window.display();   //WE DON'T KNOW WHY.  WE ARE USING AN UNSTABLE VERSION OF SFML THOUGH
 }
 
 void PlayGameMode::handleEvent(sf::Event event) {
@@ -186,7 +189,7 @@ void PlayGameMode::update(float timeStep) {
 //		mStairwell->draw(*renderTexture);
 //		mStairwell2->draw(*renderTexture);
 		mPlayContext->getEntityManager()->draw(*renderTexture);
-		mPlayContext->getWorld()->DrawDebugData();
+        mPlayContext->getWorld()->DrawDebugData();
     renderTexture->display();
 
 	window->clear(sf::Color::Black);
